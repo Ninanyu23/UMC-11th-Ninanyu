@@ -4,33 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UMC 0주차 첫 페이지</title>
+
+    <style>
+      h1 {
+        color: #2563eb;
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      .description {
+        color: #475569;
+      }
+
+      #page-title {
+        letter-spacing: -0.02em;
+      }
+
+      .card {
+        width: 90%;
+        max-width: 900px;
+        padding: 24px;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        margin: 40px auto;
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 560px) {
+        .card {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+
+      .skills {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+      }
+
+      button {
+        background: #2563eb;
+        color: #ffffff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #1d4ed8;
+      }
+    </style>
   </head>
+
   <body>
+    <div class="card">
+      <header>
+        <h1>주세은</h1>
+        <p>UMC 11기 PE(WEB) 챌린저 니나뉴 (주세은) 입니다!</p>
+      </header>
 
-    <header>
-      <h1>주세은</h1>
-      <p>UMC 11기 PE(WEB) 챌린저 니나뉴 (주세은) 입니다!</p>
-    </header>
-    
-    <main>
-      <section>
-        <h2>배우고 싶은 기술</h2>
-        <ul>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Docker</li>
-        </ul>
-      </section>
-    </main>
+      <main>
+        <section>
+          <h2>배우고 싶은 기술</h2>
+          <ul class="skills">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Docker</li>
+          </ul>
+        </section>
 
-    <section>
-      <h2>GitHub 프로필</h2>
-      <a href="https://github.com/Ninanyu23/UMC-11th-Ninanyu">GitHub 방문하기</a>
-    </section>
+        <section>
+          <h2>GitHub 프로필</h2>
+          <a href="https://github.com/Ninanyu23/UMC-11th-Ninanyu"
+            >GitHub 방문하기</a
+          >
+        </section>
 
-    <section>
-      <h2>인사하기</h2>
-      <button type="button">인사하기</button>
-    </section>
+        <section>
+          <h2>인사하기</h2>
+          <button type="button">인사하기</button>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
