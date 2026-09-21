@@ -13,7 +13,7 @@ export default function App() {
       ),
   );
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 3;
+  const totalPages = 5;
 
   const handleToggleBookmark = (id: number) => {
     setBookmarkedIds((prev) => {
